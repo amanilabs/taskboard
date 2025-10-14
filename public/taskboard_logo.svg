@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="60" height="60" viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="g-blue" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#1D4ED8"/>
+      <stop offset="100%" stop-color="#2563EB"/>
+    </linearGradient>
+    <linearGradient id="g-amber" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#F59E0B"/>
+      <stop offset="100%" stop-color="#FCD34D"/>
+    </linearGradient>
+    <linearGradient id="g-step" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#7C3AED"/>
+      <stop offset="100%" stop-color="#F59E0B"/>
+    </linearGradient>
+  </defs>
+
+  <!-- No background circle (transparent) -->
+  <!-- Left vertical blue bar -->
+  <rect x="220" y="220" width="48" height="584" rx="24" fill="url(#g-blue)"/>
+  <!-- Right vertical amber bar -->
+  <rect x="756" y="220" width="48" height="584" rx="24" fill="url(#g-amber)"/>
+  <!-- Stepped task bars -->
+  <g transform="translate(0,30)">
+    <rect x="300" y="340" width="320" height="64" rx="32" fill="url(#g-step)" opacity="0.95"/>
+    <rect x="300" y="460" width="420" height="64" rx="32" fill="url(#g-step)" opacity="0.9"/>
+    <rect x="300" y="580" width="520" height="64" rx="32" fill="url(#g-step)" opacity="0.9"/>
+  </g>
+</svg>

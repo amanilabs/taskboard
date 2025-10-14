@@ -1,0 +1,15 @@
+@import "tailwindcss";
+
+/* Flowbite plugin */
+@plugin "flowbite/plugin";
+@plugin "flowbite-typography";
+
+/* Tell Tailwind where to look for classes */
+@source "../**/*.blade.php";
+@source "../**/*.js";
+@source "../../storage/framework/views/*.php";
+@source "../../vendor/laravel/framework/src/Illuminate/Pagination/resources/views/*.blade.php";
+@source "../node_modules/flowbite-datepicker";
+/* Include Flowbite’s JS files so their classes don’t get purged */
+@source "../../node_modules/flowbite/**/*.js";
+
