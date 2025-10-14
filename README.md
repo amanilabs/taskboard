@@ -110,3 +110,8 @@ php artisan migrate --seed
 # Build assets
 
 yarn install && yarn dev
+
+🔑 Demo Login
+
+-   Email: task@board.com
+-   Password: 123456
