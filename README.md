@@ -63,6 +63,7 @@ Icons/UI
 Flowbite Components + Heroicons
 
 🧱 Project Structure
+
 ```text
 app/
 ├── helpers/
@@ -92,6 +93,7 @@ public/
 ├── css/
 └── js/
 ```
+
 🐳 Docker Installation (Recommended)
 
 Run the entire application stack without installing local PHP, Composer, or Yarn.
@@ -132,7 +134,7 @@ SQLite
 
 🪜 Steps
 
-git clone [https://github.com/](https://github.com/)<amanilabs>/taskboard.git
+git clone [https://github.com/](https://github.com/)amanilabs/taskboard.git
 cd taskboard
 
 # Install dependencies
