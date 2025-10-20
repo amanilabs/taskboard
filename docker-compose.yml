@@ -1,0 +1,41 @@
+version: '3.8'
+
+services:
+  app:
+    # Build the image using the Dockerfile in the current directory
+    build:
+      context: .
+      dockerfile: Dockerfile
+    
+    # Map container port 80 to host port 8000
+    ports:
+      - "8000:80"
+      
+    # Map your local project folder to the container's web root
+    volumes:
+      - .:/var/www/html
+      
+    # Link to the database service
+    depends_on:
+      - db
+      
+    # Keep the container running for debugging
+    tty: true
+
+  db:
+    # Use a lightweight PostgreSQL image (good standard practice)
+    image: postgres:15-alpine
+    restart: always
+    environment:
+      POSTGRES_DB: laravel
+      POSTGRES_USER: user
+      POSTGRES_PASSWORD: password
+      
+    # Store database data persistently on your host machine
+    volumes:
+      - db-data:/var/lib/postgresql/data
+
+# Define persistent storage volume
+volumes:
+  db-data:
+    driver: local
