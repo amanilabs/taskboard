@@ -98,7 +98,7 @@ Run the entire application stack without installing local PHP, Composer, or Yarn
 
 1. Clone the repository:
 
-git clone [https://github.com/](https://github.com/)<yourusername>/taskboard.git
+git clone [https://github.com/](https://github.com/)<amanilabs>/taskboard.git
 cd taskboard
 
 2. Build and Run the Stack:
