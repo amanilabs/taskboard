@@ -134,7 +134,7 @@ SQLite
 
 🪜 Steps
 
-git clone [https://github.com/](https://github.com/)amanilabs/taskboard.git
+git clone [https://github.com/](https://github.com/)<amanilabs>/taskboard.git
 cd taskboard
 
 # Install dependencies
