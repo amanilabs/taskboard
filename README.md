@@ -63,7 +63,7 @@ Icons/UI
 Flowbite Components + Heroicons
 
 🧱 Project Structure
----
+```text
 app/
 ├── helpers/
 │ └── Helper.php
@@ -91,7 +91,7 @@ public/
 ├── images/
 ├── css/
 └── js/
----
+```
 🐳 Docker Installation (Recommended)
 
 Run the entire application stack without installing local PHP, Composer, or Yarn.
